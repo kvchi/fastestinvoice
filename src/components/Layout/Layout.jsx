@@ -12,7 +12,7 @@ const navigation = [
 ];
 
 const navClass = ({ isActive }) =>
-  `rounded-[9px] px-3.5 py-3 text-sm transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-lime ${
+  `rounded-[9px] px-3.5 py-3 text-sm transition hover:text-[#245242] focus-visible:outline focus-visible:outline-2 focus-visible:outline-lime ${
     isActive ? 'bg-[#245242] text-white' : 'text-[#bed4c9]'
   }`;
 
@@ -41,7 +41,7 @@ function Layout() {
       <div className="grid min-h-screen grid-cols-[240px_1fr] tablet:grid-cols-1">
         <aside className="flex flex-col gap-1.5 bg-[#102c26] px-5 py-7 text-white tablet:hidden print:hidden">
           <div className="mx-3 mb-7 mt-1">
-            <Logo inverse />
+            <Logo inverse hoverable/>
           </div>
           <nav aria-label="Primary navigation" className="flex flex-col gap-2">
             {navigation.map((item) => (

@@ -23,7 +23,7 @@ export default function RecipientPage() {
 
   const issuer = { ...settings, business: document.business, account: document.account };
   return (
-    <main className="mx-auto my-9 max-w-[700px] rounded-[17px] border border-line bg-white p-8 phone:m-4 phone:p-5">
+    <main className="mx-auto my-9 max-w-175 rounded-[17px] border border-line bg-white p-8 phone:m-4 phone:p-5">
       <div className="flex items-center justify-between gap-4 border-b border-line pb-4 print:hidden">
         <Logo />
         <span className="rounded-full bg-[#f2e8ca] px-3 py-1.5 text-[11px] font-extrabold uppercase tracking-[1px]">Demo recipient view</span>
